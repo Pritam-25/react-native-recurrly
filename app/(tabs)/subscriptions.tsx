@@ -5,12 +5,15 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
 const SafeAreaview = styled(RNSafeAreaView);
 
-const subscriptions = () => {
+const Subscriptions = () => {
   return (
-    <SafeAreaview className="flex-1 items-center justify-center bg-white">
+    <SafeAreaview
+      edges={["top", "left", "right"]}
+      className="flex-1 items-center justify-center bg-white"
+    >
       <Text>subscriptions</Text>
     </SafeAreaview>
   );
 };
 
-export default subscriptions;
+export default Subscriptions;

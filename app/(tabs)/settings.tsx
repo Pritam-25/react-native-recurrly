@@ -5,12 +5,15 @@ import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
 const SafeAreaview = styled(RNSafeAreaView);
 
-const settings = () => {
+const Settings = () => {
   return (
-    <SafeAreaview className="flex-1 items-center justify-center bg-white">
+    <SafeAreaview
+      edges={["top", "left", "right"]}
+      className="flex-1 items-center justify-center bg-white"
+    >
       <Text>settings</Text>
     </SafeAreaview>
   );
 };
 
-export default settings;
+export default Settings;

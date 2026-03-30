@@ -1,14 +1,17 @@
 import "@/global.css";
 import { Link } from "expo-router";
-import { Pressable, Text, View } from "react-native";
 import { styled } from "nativewind";
-import { SafeAreaView as RNSafeAreaView} from "react-native-safe-area-context";
+import { Pressable, Text, View } from "react-native";
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
 
-const SafeAreaview = styled(RNSafeAreaView);
+const StyledSafeAreaView = styled(RNSafeAreaView);
 
 export default function App() {
   return (
-    <SafeAreaview className="flex-1 items-center justify-center bg-white">
+    <StyledSafeAreaView
+      edges={["top", "left", "right"]}
+      className="flex-1 items-center justify-center bg-white"
+    >
       <Text className="text-xl font-bold text-blue-500">
         Welcome to Nativewind!
       </Text>
@@ -53,6 +56,6 @@ export default function App() {
           </Pressable>
         </Link>
       </View>
-    </SafeAreaview>
+    </StyledSafeAreaView>
   );
 }

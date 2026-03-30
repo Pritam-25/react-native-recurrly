@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const signIn = () => {
+const SignIn = () => {
   return (
     <View className="flex-1 items-center justify-center bg-white">
       <Text>sign-in</Text>
@@ -9,4 +9,4 @@ const signIn = () => {
   );
 };
 
-export default signIn;
+export default SignIn;
