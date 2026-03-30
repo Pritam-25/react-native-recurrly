@@ -1,12 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { styled } from "nativewind";
+import React from "react";
+import { Text } from "react-native";
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+
+const SafeAreaview = styled(RNSafeAreaView);
 
 const subscriptions = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
+    <SafeAreaview className="flex-1 items-center justify-center bg-white">
       <Text>subscriptions</Text>
-    </View>
+    </SafeAreaview>
   );
-}
+};
 
-export default subscriptions
+export default subscriptions;

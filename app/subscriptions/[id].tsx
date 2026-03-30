@@ -10,6 +10,6 @@ const SubscriptionDetails = () => {
       <Link href="/(tabs)/subscriptions">Back to Subscriptions</Link>
     </View>
   );
-}; 
+};
 
 export default SubscriptionDetails;
